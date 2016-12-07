@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fourntech.games.picturepuzzle.activities.RegisterScreen">
+
+    <EditText
+        android:id="@+id/reg_et_name"
+        android:layout_width="365dp"
+        android:layout_height="55dp"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="@string/et_name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/reg_et_username"
+        android:layout_width="365dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/reg_et_name"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="@string/et_username"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/reg_et_email"
+        android:layout_width="365dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/reg_et_username"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="@string/et_email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/reg_et_paswd"
+        android:layout_width="365dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/reg_et_email"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="@string/et_password"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/reg_et_confpaswd"
+        android:layout_width="365dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/reg_et_paswd"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="@string/et_confpwd"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

@@ -1,4 +1,4 @@
-package com.fourntech.games.picturepuzzle;
+package com.fourntech.games.picturepuzzle.activities;
 
 import android.content.Intent;
 import android.os.CountDownTimer;
@@ -9,12 +9,14 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+import com.fourntech.games.picturepuzzle.R;
+
 public class SplashScreen extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.splash_screen);
+        setContentView(R.layout.activity_splash_screen);
 
         ImageView imageView = (ImageView) findViewById(R.id.logo);
         int height = getApplicationContext().getResources().getDisplayMetrics().heightPixels-10;
@@ -37,7 +39,7 @@ public class SplashScreen extends AppCompatActivity {
             @Override
             public void onFinish() {
                 if (mToast != null) mToast.cancel();
-                startActivity(new Intent(SplashScreen.this, LoginActivity.class));
+                startActivity(new Intent(SplashScreen.this, LoginScreen.class));
                 finish();
             }
         }.start();
